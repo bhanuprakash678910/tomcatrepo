@@ -1,0 +1,6 @@
+---
+pkgname: tomcat7
+dest: /var/lib/tomcat7/webapps
+state1: present
+state2: restarted
+src1: jenkins.war

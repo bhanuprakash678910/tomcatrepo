@@ -1,0 +1,11 @@
+---
+ - name: installing tomcat
+   apt:
+     name: "{{pkgname}}"
+     state: "{{state1}}"
+   notify: restart "{{pkgname}}"
+ - name: deployment
+   copy:
+     src:  "{{src1}}"
+     dest: "{{dest}}"  
+   notify: restart "{{pkgname}}"
